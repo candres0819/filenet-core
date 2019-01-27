@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: filenet-core
+  datasource:
+    url: jdbc:mysql://carloscardona:3306/filenet?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: filenet
+    password: filenet
+#    driver-class-name: oracle.jdbc.OracleDriver
+
+server:
+  servlet:
+    context-path: /filenet
