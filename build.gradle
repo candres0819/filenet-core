@@ -20,6 +20,14 @@ group = 'com.pruebas.filenet.core'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
+bootJar {
+    enabled = true
+    manifest {
+        attributes 'Implementation-Title': 'filenet-core', 'Implementation-Version': version
+    }
+    archiveName = "filenet-core.jar"
+}
+
 repositories {
     mavenCentral()
     maven { url 'https://repo.spring.io/snapshot' }
